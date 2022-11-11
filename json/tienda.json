@@ -4,11 +4,11 @@
        
     },
     "productos": {
-        "1": ["Control Switch Split Pad", "$ 50000"],
-        "2":["Nintendo Labo","$ 59000"],
-        "3":["8bitdo Adaptador Inalámbrico", "$ 12000"],
-        "4":["Joycon Splatoon 2", "$ 59000"],
-        "5":["Switch VR", "$ 16000"],
-        "6":["Ring fit adventure bundle", "$ 70000"]
+        "1": ["Control Switch Split Pad", "Perfecto para títulos de acción de alto ritmo y muchos otros géneros","$ 50000"],
+        "2":["Nintendo Labo","Kits de materiales que se montan en combinación con la Nintendo Switch","$ 59000"],
+        "3":["8bitdo Adaptador Inalámbrico", "Conecta Casi Todos Los Controladores Inalámbricos A Su Switch, Pc Con Windows, Mac, Raspberry Pi Y Más", "$ 12000"],
+        "4":["Joycon Splatoon 2", "Ofrece múltiples formas nuevas y sorprendentes para que los jugadores se diviertan", "$ 59000"],
+        "5":["Switch VR","Lentes de realidad Virtual, para ver peliculas, lentes grandes ajustables", "$ 16000"],
+        "6":["Ring fit adventure bundle", "Es un juego de explorar un mundo de aventuras y derrotar enemigos haciendo ejercicio en la vida real", "$ 70000"]
     }
 }
