@@ -1,17 +1,20 @@
-function cargaJson(id){
-    var value = document.getElementById(id).value;
+function cargaJson(id, name){
+    var elementype = document.getElementsByName(name).value;
+    // var value = document.getElementById(id).value;
 
-    switch (value) {
-        case "1":
-            jsonFile = "json/cliente.json";
-            break;
-        case "2":
-            jsonFile = "json/productos.json";
-            break;
-        default:
-            console.log("Nada");
-            break;
-    }
+    // switch (value) {
+    //     case "user":
+    //         jsonFile = "json/cliente.json";
+    //         break;
+    //     case "card":
+    //         jsonFile = "json/productos.json";
+    //         break;
+    //     default:
+    //         console.log("Nada");
+    //         break;
+    // }
+
+    jsonFile = "json/tienda.json";
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function(){
