@@ -1,18 +1,4 @@
 function cargaJson(name){
-    //var elementype = document.getElementByName(name).value;
-    // var value = document.getElementById(id).value;
-
-    // switch (value) {
-    //     case "user":
-    //         jsonFile = "json/cliente.json";
-    //         break;
-    //     case "card":
-    //         jsonFile = "json/productos.json";
-    //         break;
-    //     default:
-    //         console.log("Nada");
-    //         break;
-    // }
 
     jsonFile = "json/tienda.json";
 
@@ -44,16 +30,18 @@ function updateContent(ename, objson){
 function cliente(objson){
     document.getElementById("uname").innerHTML= "Usuario: " + objson.cliente[1][0];
     document.getElementById("usaldo").innerHTML= "Saldo: " + objson.cliente[1][1];
+    document.getElementById("uname2").innerHTML= objson.cliente[1][0];
 }
 
 function productos(ename,objson){
     //products = document.getElementsByName(ename); //para cuando quiera hacer que se creen los cuadritos dependiendo de cantidad de elementos en json
     for (i in objson.productos){
-        for (let j = 0; j < 3; j++){
-            document.getElementById(i.toString()+"."+(j+1).toString()).innerHTML = objJson.productos[i][j];
+        for (let j = 0; j < 2; j++){
+            document.getElementById(i.toString()+"."+(j+1).toString()).innerHTML = objson.productos[i][j];
         }
+        document.getElementById(i.toString()+".3").innerHTML = "$ " + objson.productos[i][2];
     }
 }
 
 cargaJson("user");
-cargaJson("productos");
+cargaJson("card");
