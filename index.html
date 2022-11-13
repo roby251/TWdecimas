@@ -25,7 +25,7 @@
                     <strong name = "user", id="uname"> Usuario: Paco</strong>
                 </a>
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                    <strong name = "user",>Sueldo: $</strong>
+                    <strong name = "user",>Saldo: $</strong>
                     <strong name = "user", id="sueldo"> 250000</strong>
                 </a>
                 </button>
@@ -33,17 +33,28 @@
         </div>
     </header>
     <main>
+        
         <section class="py-5 text-center container">
+            
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light"> Bienvenido</h1>
                     <p name = "user", id="uname2", class="lead text-muted">paco</p>
                     <p>
-                        <a href="#" class="btn btn-primary my-2"> Comprar</a>
-                        <a href="#" class="btn btn-secondary my-2"onclick="recargar()" >Recargar dinero </a>
+                        <a href="#" class="btn btn-primary my-2" onclick="asegurarcompra()"> Comprar</a>
+                        <a href="#" class="btn btn-secondary my-2" onclick="recargar()" >Recargar dinero </a>
                     </p>
+                    
                 </div>
+                <div class="col-lg-6 col-md-8 mx-auto" class="list-group">
+                    <div class="listcompra"> 
+                        <a href="#" class="list-group-item list-group-item-action active">Lista de compras</a>
+                        <a href="#" class="list-group-item list-group-item-action">Total: </a>
+                        <a href="#" class="list-group-item list-group-item-action" id="pagar">0 </a>
+                    </div>
+                 </div>
             </div>
+            
         </section>
         <div class="album py-5 bg-light">
             <div class="container">
@@ -57,9 +68,9 @@
                                 <p class="card-text" id="1.2">Perfecto para títulos de acción de alto ritmo y muchos otros géneros</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-info" id="articulo1" onclick="agregarArticulo(id)">Comprar</button>
+                                        <button type="button" class="btn btn-info" id="articulo1" onclick="agregarArticulo(id,1.3)">Comprar</button>
                                     </div>
-                                    <small class="text-muted" id="1.3">  $ 50000</small>
+                                    <small class="text-muted" id="1.3"></small>
                                 </div>
                             </div>
                         </div>
@@ -74,9 +85,9 @@
                                 <p class="card-text" id="2.2"> Kits de materiales que se montan en combinación con la Nintendo Switch</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-info" id="articulo2" onclick="agregarArticulo(id)">Comprar</button>
+                                        <button type="button" class="btn btn-info" id="articulo2" onclick="agregarArticulo(id,2.3)">Comprar</button>
                                     </div>
-                                    <small class="text-muted" id="2.3"> $ 59000</small>
+                                    <small class="text-muted" id="2.3"></small>
                                 </div>
                             </div>
                         </div>
@@ -90,9 +101,9 @@
                                 <p class="card-text" id="3.2">Conecta Casi Todos Los Controladores Inalámbricos A Su Switch, Pc Con Windows, Mac, Raspberry Pi Y Más</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-info" id="articulo3" onclick="agregarArticulo(id)">Comprar</button>
+                                        <button type="button" class="btn btn-info" id="articulo3" onclick="agregarArticulo(id,3.3)">Comprar</button>
                                     </div>
-                                    <small class="text-muted" id="3.3"> $ 12000</small>
+                                    <small class="text-muted" id="3.3"></small>
                                 </div>
                             </div>
                         </div>
@@ -105,9 +116,9 @@
                                 <p class="card-text" id="4.2">Ofrece múltiples formas nuevas y sorprendentes para que los jugadores se diviertan</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-info" id="articulo4" onclick="agregarArticulo(id)">Comprar</button>
+                                        <button type="button" class="btn btn-info" id="articulo4" onclick="agregarArticulo(id,4.3)">Comprar</button>
                                     </div>
-                                    <small class="text-muted" id="4.3"> $ 59000</small>
+                                    <small class="text-muted" id="4.3"></small>
                                 </div>
                             </div>
                         </div>
@@ -121,9 +132,9 @@
                                 <p class="card-text" id="5.2"> Lentes de realidad Virtual, para ver peliculas, lentes grandes ajustables</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-info" id="articulo5" onclick="agregarArticulo(id)">Comprar</button>
+                                        <button type="button" class="btn btn-info" id="articulo5" onclick="agregarArticulo(id,5.3)">Comprar</button>
                                     </div>
-                                    <small class="text-muted" id="5.3">$ 16000</small>
+                                    <small class="text-muted" id="5.3"></small>
                                 </div>
                             </div>
                         </div>
@@ -138,9 +149,9 @@
                                 <p class="card-text" id="6.2">Es un juego de explorar un mundo de aventuras y derrotar enemigos haciendo ejercicio en la vida real</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-info" id="articulo6" onclick="agregarArticulo(id)">Comprar</button>
+                                        <button type="button" class="btn btn-info" id="articulo6" onclick="agregarArticulo(id,6.3)">Comprar</button>
                                     </div>
-                                    <small class="text-muted" id="6.3"> $ 70000</small>
+                                    <small class="text-muted" id="6.3"></small>
                                 </div>
                             </div>
                         </div>
