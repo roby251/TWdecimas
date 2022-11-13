@@ -1,5 +1,5 @@
 function recargar(){
-    document.getElementById("sueldo").innerHTML = 250000; 
+    document.getElementById("usaldo").innerHTML = 250000; 
 }
 function agregarArticulo(boton,articulo){
     const precioN =document.getElementById(articulo).innerHTML
@@ -22,6 +22,6 @@ function asegurarcompra(){
         document.getElementById("pagar").innerHTML =0;
     }
     else{
-        alert("ERROR");
+        alert("ERROR, dinero insuficiente");
     }
 }
