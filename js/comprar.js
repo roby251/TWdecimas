@@ -17,8 +17,8 @@ function agregarArticulo(boton,articulo){
 function asegurarcompra(){
 
 
-    if (parseInt(document.getElementById("sueldo").innerHTML)-parseInt(document.getElementById("pagar").innerHTML)>0){
-        document.getElementById("sueldo").innerHTML=parseInt(document.getElementById("sueldo").innerHTML)-parseInt(document.getElementById("pagar").innerHTML); 
+    if (parseInt(document.getElementById("usaldo").innerHTML)-parseInt(document.getElementById("pagar").innerHTML)>0){
+        document.getElementById("usaldo").innerHTML=parseInt(document.getElementById("usaldo").innerHTML)-parseInt(document.getElementById("pagar").innerHTML); 
         document.getElementById("pagar").innerHTML =0;
     }
     else{
