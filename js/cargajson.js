@@ -29,7 +29,7 @@ function updateContent(ename, objson){
 
 function cliente(objson){
     document.getElementById("uname").innerHTML= "Usuario: " + objson.cliente[1][0];
-    document.getElementById("usaldo").innerHTML= "Saldo: " + objson.cliente[1][1];
+    document.getElementById("usaldo").innerHTML= objson.cliente[1][1];
     document.getElementById("uname2").innerHTML= objson.cliente[1][0];
 }
 
