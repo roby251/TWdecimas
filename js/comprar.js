@@ -24,6 +24,7 @@ function asegurarcompra(){
         var x = document.getElementById("apruebop");
         if (x.style.display === "none") {
             x.style.display = "block";
+            document.getElementById("errorp").style.display = "none";
         } else {
             x.style.display = "none";
         }
@@ -32,6 +33,7 @@ function asegurarcompra(){
         var x = document.getElementById("errorp");
         if (x.style.display === "none") {
             x.style.display = "block";
+            document.getElementById("apruebop").style.display = "none";
         } else {
             x.style.display = "none";
         }
