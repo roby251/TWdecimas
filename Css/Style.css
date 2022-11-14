@@ -22,3 +22,14 @@ img{
 #errorp,#apruebop{
   display: none;
 }
+a {
+  text-decoration: none;
+}
+.logo{
+  font-size: 3rem;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+.color_negro{
+  color: black
+}
