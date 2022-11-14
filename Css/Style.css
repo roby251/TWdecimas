@@ -19,3 +19,6 @@ img{
     font-size: 3.5rem;
 }
 }
+#errorp,#apruebop{
+  display: none;
+}

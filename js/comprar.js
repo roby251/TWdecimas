@@ -20,8 +20,22 @@ function asegurarcompra(){
     if (parseInt(document.getElementById("usaldo").innerHTML)-parseInt(document.getElementById("pagar").innerHTML)>=0){
         document.getElementById("usaldo").innerHTML=parseInt(document.getElementById("usaldo").innerHTML)-parseInt(document.getElementById("pagar").innerHTML); 
         document.getElementById("pagar").innerHTML =0;
+        
+        var x = document.getElementById("apruebop");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
     }
     else{
-        alert("ERROR, dinero insuficiente");
+        var x = document.getElementById("errorp");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        
+        
     }
 }
